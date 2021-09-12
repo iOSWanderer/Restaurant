@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct DrinkTile: View {
+struct DrinkTile {
     @State var available = false
     var data: Row
+}
+
+extension DrinkTile: View {
     var body: some View {
         VStack {
             ZStack {
@@ -39,7 +42,9 @@ struct DrinkTile: View {
             checkIfCanServe(data.subtitle)
         }
     }
-    
+}
+
+extension DrinkTile {
     func checkIfCanServe(_ value: String) {
         let components = Calendar.current.dateComponents([.hour, .minute], from: Date())
         let hour = components.hour ?? 0

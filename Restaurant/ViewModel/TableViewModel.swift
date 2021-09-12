@@ -41,10 +41,4 @@ class TableViewModel: ObservableObject {
             }
         }
     }
-    
-}
-
-postfix operator |
-postfix func |(value: String?) -> String {
-    return value ?? "Unknown"
 }

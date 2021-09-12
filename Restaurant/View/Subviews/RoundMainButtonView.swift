@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct RoundMainButtonView: View {
+struct RoundMainButtonView {
     var data: Row
     @Binding var hideText: Bool
     var showFullDescription = false
+}
+
+extension RoundMainButtonView: View {
     var body: some View {
         ZStack {
             VStack {

@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView {
     @StateObject private var model = TableViewModel()
     @State private var showAnimation = false
+}
+
+extension ContentView: View {
     var body: some View {
         ZStack {
             Color("paper")

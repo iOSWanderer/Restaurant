@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct RegularTile: View {
+struct RegularTile {
     var data: Row
+}
+
+extension RegularTile: View {
     var body: some View {
         RoundMainButtonView(data: data, hideText: .constant(false), showFullDescription: true)
     }

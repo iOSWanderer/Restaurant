@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA53DA6626EE6678008E51EF /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA53DA6526EE6678008E51EF /* CustomOperators.swift */; };
 		EA9C753B26EE2656000F51E8 /* CookTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C753A26EE2656000F51E8 /* CookTile.swift */; };
 		EA9C753D26EE26CF000F51E8 /* RoundMainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C753C26EE26CF000F51E8 /* RoundMainButtonView.swift */; };
 		EA9C754026EE2A0B000F51E8 /* DrinkTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C753F26EE2A0B000F51E8 /* DrinkTile.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA53DA6526EE6678008E51EF /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		EA9C753A26EE2656000F51E8 /* CookTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookTile.swift; sourceTree = "<group>"; };
 		EA9C753C26EE26CF000F51E8 /* RoundMainButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundMainButtonView.swift; sourceTree = "<group>"; };
 		EA9C753F26EE2A0B000F51E8 /* DrinkTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTile.swift; sourceTree = "<group>"; };
@@ -72,9 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA53DA6426EE664C008E51EF /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				EAD03C2926ED255700854C6A /* DishTile.swift */,
+				EA9C753F26EE2A0B000F51E8 /* DrinkTile.swift */,
+				EA9C753A26EE2656000F51E8 /* CookTile.swift */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
 		EA9C753E26EE287F000F51E8 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				EA53DA6426EE664C008E51EF /* Tiles */,
 				EA9C753C26EE26CF000F51E8 /* RoundMainButtonView.swift */,
 			);
 			path = Subviews;
@@ -183,9 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				EAB8A6F526EBA8C2007A5A36 /* ContentView.swift */,
-				EAD03C2926ED255700854C6A /* DishTile.swift */,
-				EA9C753F26EE2A0B000F51E8 /* DrinkTile.swift */,
-				EA9C753A26EE2656000F51E8 /* CookTile.swift */,
 				EA9C753E26EE287F000F51E8 /* Subviews */,
 			);
 			path = View;
@@ -195,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD03C2B26ED25AA00854C6A /* RemoteImage.swift */,
+				EA53DA6526EE6678008E51EF /* CustomOperators.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 				EAD03C1926ED23F900854C6A /* GenericData.swift in Sources */,
 				EA9C753B26EE2656000F51E8 /* CookTile.swift in Sources */,
 				EAD03C1E26ED245E00854C6A /* JSONData.swift in Sources */,
+				EA53DA6626EE6678008E51EF /* CustomOperators.swift in Sources */,
 				EAB8A70B26EBADF6007A5A36 /* DishData.swift in Sources */,
 				EAB8A71226EBB271007A5A36 /* Company.swift in Sources */,
 				EA9C753D26EE26CF000F51E8 /* RoundMainButtonView.swift in Sources */,
